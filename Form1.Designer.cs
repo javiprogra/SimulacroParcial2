@@ -33,7 +33,7 @@
             // 
             // buttonInscripcion
             // 
-            buttonInscripcion.Location = new Point(36, 62);
+            buttonInscripcion.Location = new Point(33, 45);
             buttonInscripcion.Name = "buttonInscripcion";
             buttonInscripcion.Size = new Size(106, 69);
             buttonInscripcion.TabIndex = 0;
