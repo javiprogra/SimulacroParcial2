@@ -8,6 +8,8 @@ namespace SimulacroParcial2
 {
     internal class Inscripcion
     {
+        public string? NombreEstudiante {  get; set; }
+        public string? NombreTaller { get; set; }
         public string? DpiEstudiante {  get; set; }
         public string? CodigoTaller { get; set; }
         public DateTime fechaInscripcion { get; set; }

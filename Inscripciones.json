@@ -1,7 +1,9 @@
 [
   {
-    "DpiEstudiante": "3358388850901",
+    "NombreEstudiante": "Carlos Castillo",
+    "NombreTaller": "Computacion Cuantica",
+    "DpiEstudiante": "3358232410901",
     "CodigoTaller": "056",
-    "fechaInscripcion": "2025-04-07T08:59:07.853938-06:00"
+    "fechaInscripcion": "2025-04-07T09:07:24.5156533-06:00"
   }
 ]

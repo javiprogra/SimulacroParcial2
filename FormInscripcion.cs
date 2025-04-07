@@ -35,7 +35,8 @@ namespace SimulacroParcial2
         {
             Inscripcion inscripcion = new Inscripcion();
 
-
+            inscripcion.NombreEstudiante = comboBoxAlumno.Text;
+            inscripcion.NombreTaller = comboBoxTaller.Text;
             inscripcion.DpiEstudiante = comboBoxAlumno.SelectedValue.ToString();
             inscripcion.CodigoTaller = comboBoxTaller.SelectedValue.ToString();
             inscripcion.fechaInscripcion = DateTime.Now;
@@ -62,6 +63,7 @@ namespace SimulacroParcial2
 
         private void FormInscripcion_Load(object sender, EventArgs e)
         {
+            inscripciones = inscripcionJson.Leer(archivoInscripcion);
             cargarDatos();
         }
     }
