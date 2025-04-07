@@ -6,6 +6,7 @@ namespace SimulacroParcial2
         List<Inscripcion> inscripciones = new List<Inscripcion>();
         string archivoInscripcion = @"../../../Inscripciones.json";
         List<Reporte> reportes = new List<Reporte>();
+        int cantidadAlumnos = 0;
 
         public Form1()
         {
@@ -28,9 +29,10 @@ namespace SimulacroParcial2
                 Reporte reporte = new Reporte();
                 reporte.nombre = inscripcion.NombreEstudiante;
                 reporte.taller = inscripcion.NombreTaller;
-
+                cantidadAlumnos++;
                 reportes.Add(reporte);
             }
+            labelAlumnos.Text = cantidadAlumnos.ToString();
             actualizarGrid(reportes);
         }
 
@@ -41,6 +43,23 @@ namespace SimulacroParcial2
         }
 
         private void Form1_Load(object sender, EventArgs e)
+        {
+            cargarInscripciones();
+        }
+
+        private void buttonOrdenarAZ_Click(object sender, EventArgs e)
+        {
+            List<Reporte> alfabeticoAZ = reportes.OrderByDescending(a => a.taller).ToList();
+            actualizarGrid(alfabeticoAZ);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            List<Reporte> alfabeticoZA = reportes.OrderBy(a => a.taller).ToList();
+            actualizarGrid(alfabeticoZA);
+        }
+
+        private void buttonUpdate_Click(object sender, EventArgs e)
         {
             cargarInscripciones();
         }
