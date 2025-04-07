@@ -33,12 +33,13 @@
             // 
             // buttonInscripcion
             // 
-            buttonInscripcion.Location = new Point(33, 45);
+            buttonInscripcion.Location = new Point(56, 95);
             buttonInscripcion.Name = "buttonInscripcion";
             buttonInscripcion.Size = new Size(106, 69);
             buttonInscripcion.TabIndex = 0;
             buttonInscripcion.Text = "Ingresar Inscripcion";
             buttonInscripcion.UseVisualStyleBackColor = true;
+            buttonInscripcion.Click += buttonInscripcion_Click;
             // 
             // Form1
             // 

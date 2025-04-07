@@ -6,5 +6,11 @@ namespace SimulacroParcial2
         {
             InitializeComponent();
         }
+
+        private void buttonInscripcion_Click(object sender, EventArgs e)
+        {
+            FormInscripcion formInscripcion = new FormInscripcion();
+            formInscripcion.Show();
+        }
     }
 }

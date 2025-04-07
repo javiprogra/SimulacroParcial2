@@ -11,6 +11,5 @@ namespace SimulacroParcial2
         public string? Nombre { get; set; }
         public string? Direccion {  get; set; }
         public string? DPI { get; set; }
-
     }
 }

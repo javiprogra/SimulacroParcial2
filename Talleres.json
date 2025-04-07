@@ -1,0 +1,17 @@
+[
+  {
+    "CodigoTaller": "056",
+    "NombreTaller": "Computacion Cuantica",
+    "Costo": 30.0
+  },
+  {
+    "CodigoTaller": "058",
+    "NombreTaller": "Gastronomia",
+    "Costo": 25.0
+  },
+  {
+    "CodigoTaller": "057",
+    "NombreTaller": "Electronica",
+    "Costo": 45.0
+  }
+]
