@@ -38,6 +38,7 @@ namespace SimulacroParcial2
 
         public void actualizarGrid(List<Reporte> lista)
         {
+            dataGridViewReporte.AutoResizeColumns();
             dataGridViewReporte.DataSource = null;
             dataGridViewReporte.DataSource = lista;
         }
